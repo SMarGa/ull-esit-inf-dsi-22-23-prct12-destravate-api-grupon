@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsc-watch --onSuccess \"env-cmd -f ./config/dev.env node dist/index.js\"",
+    "build": "tsc",
     "start": "node dist/index.js",
     "test": "env-cmd -f ./config/test.env mocha --exit",
     "doc": "typedoc",
@@ -38,7 +39,7 @@
     "prettier": "^2.8.6",
     "supertest": "^6.3.3",
     "ts-node": "^10.9.1",
-    "tsc-watch": "^6.0.0",
+    "tsc-watch": "^6.0.4",
     "typedoc": "^0.23.28",
     "typescript": "^5.0.2"
   },
